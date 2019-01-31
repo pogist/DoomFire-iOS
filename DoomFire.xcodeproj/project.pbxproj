@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C29C06F2203992500605F1C /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29C06E2203992500605F1C /* MainScene.swift */; };
 		4C29C07122039A8800605F1C /* DoomFire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29C07022039A8800605F1C /* DoomFire.swift */; };
+		4C29C0732203A02300605F1C /* DoomPixelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C29C0722203A02300605F1C /* DoomPixelColor.swift */; };
 		4CCD000222033725003AF67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD000022033725003AF67F /* Main.storyboard */; };
 		4CCD000422033726003AF67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD000322033726003AF67F /* Assets.xcassets */; };
 		4CCD000722033726003AF67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCD000522033726003AF67F /* LaunchScreen.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		4C29C06E2203992500605F1C /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		4C29C07022039A8800605F1C /* DoomFire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoomFire.swift; sourceTree = "<group>"; };
+		4C29C0722203A02300605F1C /* DoomPixelColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoomPixelColor.swift; sourceTree = "<group>"; };
 		4CCD000122033725003AF67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CCD000322033726003AF67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCD000622033726003AF67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				4CCD000822033726003AF67F /* Info.plist */,
 				4C29C06E2203992500605F1C /* MainScene.swift */,
 				4C29C07022039A8800605F1C /* DoomFire.swift */,
+				4C29C0722203A02300605F1C /* DoomPixelColor.swift */,
 			);
 			path = DoomFire;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				4C29C06F2203992500605F1C /* MainScene.swift in Sources */,
 				4CCDFFFF22033725003AF67F /* ViewController.swift in Sources */,
+				4C29C0732203A02300605F1C /* DoomPixelColor.swift in Sources */,
 				4C29C07122039A8800605F1C /* DoomFire.swift in Sources */,
 				4CCDFFFD22033725003AF67F /* AppDelegate.swift in Sources */,
 			);
