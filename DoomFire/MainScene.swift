@@ -9,5 +9,12 @@
 import SpriteKit
 
 class MainScene: SKScene {
-  
+  var doomFire: DoomFire!
+
+  override func didMove(to view: SKView) {
+    super.didMove(to: view)
+
+    doomFire = DoomFire(width: 10, height: 10)
+    print(doomFire.pixels)
+  }
 }
