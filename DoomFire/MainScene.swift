@@ -18,8 +18,8 @@ class MainScene: SKScene {
     super.didMove(to: view)
 
     doomFire = DoomFire(
-      width: Int(view.frame.width) / nodeSize,
-      height: Int(view.frame.height) / nodeSize)
+      width: Int(view.frame.width) / nodeSize + (nodeSize / 2),
+      height: Int(view.frame.height) / nodeSize + (nodeSize / 2))
 
     nodes = doomFire.pixels.map { pixel in
       let node = self.makeNode(fromPixel: pixel)
