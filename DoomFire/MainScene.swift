@@ -38,4 +38,13 @@ class MainScene: SKScene {
       y: Int(pixel.position.y) * nodeSize + (nodeSize / 2))
     return node
   }
+
+  override func update(_ currentTime: TimeInterval) {
+    doomFire.propagate()
+
+    nodes.enumerated().forEach { (index, node) in
+      node.fillColor = DoomPixelColor.pixelColor(
+        forIntensity: doomFire.pixels[index].intensity)
+    }
+  }
 }
