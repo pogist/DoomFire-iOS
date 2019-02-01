@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     let skView = SKView(frame: view.bounds)
     skView.showsFPS = true
     skView.showsNodeCount = true
-    skView.isAsynchronous = true
-    skView.preferredFramesPerSecond = 60
 
     view.addSubview(skView)
 
