@@ -17,7 +17,9 @@ class MainScene: SKScene {
   override func didMove(to view: SKView) {
     super.didMove(to: view)
 
-    doomFire = DoomFire(width: Int(view.frame.width), height: Int(view.frame.height))
+    doomFire = DoomFire(
+      width: Int(view.frame.width) / nodeSize,
+      height: Int(view.frame.height) / nodeSize)
 
     nodes = doomFire.pixels.map { pixel in
       let node = self.makeNode(fromPixel: pixel)
