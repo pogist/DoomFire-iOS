@@ -1,9 +1,4 @@
-<img align="center" src="./assets/simulator.gif" alt="demo">
-
-## DOOM Fire on iOS
-This project was heavily inspired by [this repository](https://github.com/filipedeschamps/doom-fire-algorithm).
-
-## License
+## WTFPL
 
 ```
             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
@@ -20,4 +15,3 @@ This project was heavily inspired by [this repository](https://github.com/filipe
 
   0. You just DO WHAT THE FUCK YOU WANT TO.
 ```
-
