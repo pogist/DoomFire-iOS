@@ -27,6 +27,22 @@ class MainScene: SKScene {
 
       return node
     }
+
+    let propagateFire = SKAction.run {
+      self.doomFire.propagate()
+
+      self.nodes.enumerated().forEach { index, node in
+        node.fillColor = DoomPixelColor.pixelColor(
+          forIntensity: self.doomFire.pixels[index].intensity)
+      }
+    }
+
+    let propagateFireWithDelay = SKAction.sequence([
+      propagateFire,
+      SKAction.wait(forDuration: 0.1)
+    ])
+
+    run(SKAction.repeatForever(propagateFireWithDelay))
   }
 
   private func makeNode(fromPixel pixel: DoomFire.Pixel) -> SKShapeNode {
@@ -37,14 +53,5 @@ class MainScene: SKScene {
       x: Int(pixel.position.x) * nodeSize + (nodeSize / 2),
       y: Int(pixel.position.y) * nodeSize + (nodeSize / 2))
     return node
-  }
-
-  override func update(_ currentTime: TimeInterval) {
-    doomFire.propagate()
-
-    nodes.enumerated().forEach { (index, node) in
-      node.fillColor = DoomPixelColor.pixelColor(
-        forIntensity: doomFire.pixels[index].intensity)
-    }
   }
 }
